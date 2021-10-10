@@ -92,3 +92,94 @@ module=proxy
 
 ### 22. Can we repeat the demo of this? https://medium.com/mycrypto/understanding-event-logs-on-the-ethereum-blockchain-f4ae7ba50378, watching things happen on blockchain? Can we explore this below further:? Events in the ethereum system must be easily searched for, so that applications can filter and display events, including historical ones, without undue overhead. At the same time, storage space is expensive, so we don't want to store a lot of duplicate data - such as the list of transactions, and the logs they generate. The logs bloom filter exists to resolve this.
 
+```javascript
+const Web3 = require("web3");
+//const web3 = new Web3("");
+
+
+let contractAbi = [
+	{
+		"inputs": [
+			{
+				"internalType": "contract LearnToken",
+				"name": "_learnToken",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "Deposit",
+		"type": "event"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "normalSubFee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "premiumSubFee",
+				"type": "uint256"
+			}
+		],
+		"name": "registerAsOrganization",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]
+
+let contractAddress = '0xc271E0E53A7c88f1612DcA585af61F67Fe29eFCf';
+
+
+const provider = 'wss://ropsten.infura.io/ws/v3/af057cffb09d4672b0f374921c3eb03c'
+  let web3 = new Web3(new Web3.providers.WebsocketProvider(provider))
+  let contract = new web3.eth.Contract(contractAbi, contractAddress);
+
+  contract.events.Deposit()
+.on('data', (event) => {
+    console.log('data',event);
+})
+.on('error', console.error);
+
+```
+
