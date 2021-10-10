@@ -78,6 +78,10 @@ module=proxy
 
 ### 15. Blooms log visual and how it is managed in the block header.
 
+* The Bloom filter in the transaction (R_b) contains only the logs from this transaction while the Bloom filter in the block header (H_b) contains the logs from all transactions in this block.
+
+So yes, the information is stored twice, but with the benefit of being able to check quickly if a certain log is present in a block without having access to all transactions. This enables light clients (which only know block headers) to watch for events.
+
 ### 16. How can use or index into bloom's filter to look for specific events.
 
 ### 17. Can you run this and check if you can get the public key from a real Tx?
