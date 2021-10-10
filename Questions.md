@@ -16,6 +16,13 @@
 
 ### 7. When we deploy from Remix on Ropsten where is the smart contract deployed?
 
+* When we select the Web3 provider, Remix uses Metamask to connect to one of the ethereum networks. MetaMask is a type of Ethereum wallet that bridges the gap between the user interfaces for Ethereum (e.g. Mist browsers, DApps) and the regular web (e.g. Chrome, Firefox, websites).
+
+
+  _What does Metamask do_ ??
+
+* Its function is to inject a JavaScript library called web3.js into the namespace of each page your browser loads. Web3.js is written by the Ethereum core team.   MetaMask is mainly used as a plugin in chrome.
+
 
 ### 8. Where is mempool of transactions stored?
 
