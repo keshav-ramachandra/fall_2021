@@ -162,7 +162,7 @@ eventExample.events
 ### 21. How to get events? How are they logged in the header? See above URL>
 
 * Events can be monitored using the Contracts Api whch is more convenient than working with the filters. They are Logged as data and topics. data will be those non indexed fields. And topics are indexed fields. In solidity, first topic will be the signature of the event and there can be a max of four indexed topic fields.
-
+https://web3js.readthedocs.io/en/v1.2.4/web3-utils.html
 
 ### 22. Can we repeat the demo of this? https://medium.com/mycrypto/understanding-event-logs-on-the-ethereum-blockchain-f4ae7ba50378, watching things happen on blockchain? Can we explore this below further:? Events in the ethereum system must be easily searched for, so that applications can filter and display events, including historical ones, without undue overhead. At the same time, storage space is expensive, so we don't want to store a lot of duplicate data - such as the list of transactions, and the logs they generate. The logs bloom filter exists to resolve this.
 
