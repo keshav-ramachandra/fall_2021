@@ -145,6 +145,44 @@ filter = {
 
 ### 18. Similarly, can you get me the code for obtaining the receipts of a function excution?
 
+```solidity
+const Web3 = require("web3");
+const EventExample = require("./build/contracts/EventExample.json");
+
+const init = async () => {
+  const web3 = new Web3("ws://localhost:8545");
+
+  const id = await web3.eth.net.getId();
+  const deployedNetwork = EventExample.networks[id];
+  const eventExample = new web3.eth.Contract(
+    EventExample.abi,
+    deployedNetwork.address
+  );
+
+
+  const accounts = await web3.eth.getAccounts();
+
+  var getData = eventExample.methods.storeData(1,2).encodeABI();//just parameters you pass to myFunction
+// And that is where all the magic happens
+  await web3.eth.sendTransaction({
+      to: deployedNetwork.address,//contracts address
+      from:accounts[0],
+      data: getData,
+  }).on('transactionHash', function(hash){
+    console.log("hash is", hash);
+  })
+  .on('receipt', function(receipt){
+    console.log("receipt 1 is", receipt);
+  })
+  .on('confirmation', function(confirmationNumber, receipt){
+    console.log("confirmation is",confirmationNumber);
+    console.log("confirmation is", receipt);
+  })
+  .on('error', function(error, receipt) {
+      console.log("receipt is", receipt);
+  });
+  ```
+
 ### 19. Similarly, can you get me the code for recovering event log from header bloom's log?
 
 * I think we can get events by creating filters based on the indexed fields we used while defining the events. But the way events are retrieved from block header's bloom filter is an internal implementaton I guess.
