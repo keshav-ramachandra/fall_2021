@@ -1,0 +1,64 @@
+.textbox {
+  font-size: 25px;
+  padding: 2px;
+  margin-top: 20px;
+  width: 120px;
+  height: 39px;
+  margin-top: ;
+  text-align: center;
+  margin-right: 4px;
+  border-radius: 3px;
+}
+
+.deposit {
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #4CAF50;
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  padding: 2px !important;
+}
+
+.node{
+  width: 900px;
+  height: 1200px;
+  background-color: #DECAC6 ;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 50px !important;
+  text-align: center;
+}
+
+.attribute{
+  color: #111; font-family: 'Open Sans', sans-serif; font-size: 22px; font-weight: 300; 
+  padding-left: 70px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.but_ui{
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.attr_value{
+  color: #111; font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 100; 
+  margin-top: 17px;
+  padding-right: 70px;
+  text-align: right;
+}
+
+.attr_small{
+  color: #111; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 100; 
+  padding-right: 30px;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.err_text{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}

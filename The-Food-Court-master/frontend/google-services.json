@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "427881446531",
+    "project_id": "myexpo-f0384",
+    "storage_bucket": "myexpo-f0384.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427881446531:android:7edad5ffdb71801facafb6",
+        "android_client_info": {
+          "package_name": "com.dan.foodcrt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427881446531-rvpn2asmj1vk5ts61u462o8qhrfh8vrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427881446531-rvpn2asmj1vk5ts61u462o8qhrfh8vrl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+.App {
+    text-align: center;
+    list-style-position: inside;
+    padding:  0% 20% 0% 20%;
+  }
+  
+   .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+
+  button{
+    background-color: green;
+  }
+  
+  @media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  }

@@ -1,0 +1,730 @@
+	user_id	post_id	like	food_type	totalLikes
+0	634	552	0	French Onion Chicken with Roasted Carrots & Mashed Potatoes	4
+1	525	552	0	French Onion Chicken with Roasted Carrots & Mashed Potatoes	4
+2	193	135	0	Timbits	8
+3	8	135	1	Timbits	8
+6	734	492	1	Flamiche	8
+7	125	492	0	Flamiche	8
+8	549	604	1	Shakshuka	8
+9	427	604	1	Shakshuka	8
+10	764	765	1	Ham hock colcannon	6
+11	941	583	0	Chicken Parmentier	4
+13	442	547	1	Beef stroganoff	6
+14	892	547	0	Beef stroganoff	6
+15	58	755	1	Treacle Tart	9
+18	101	800	0	Pear Tarte Tatin	6
+19	565	216	1	Chick-Fil-A Sandwich	4
+20	342	267	1	Osso Buco alla Milanese	10
+21	174	267	1	Osso Buco alla Milanese	10
+22	612	267	0	Osso Buco alla Milanese	10
+24	176	49	1	Steak and Kidney Pie	6
+25	865	49	0	Steak and Kidney Pie	6
+29	794	306	1	Smoked Haddock Kedgeree	6
+31	215	193	0	Rogaliki (Polish Croissant Cookies)	8
+32	303	193	0	Rogaliki (Polish Croissant Cookies)	8
+33	286	183	1	Smoked Haddock Kedgeree	6
+34	48	183	0	Smoked Haddock Kedgeree	6
+35	859	764	1	Peach & Blueberry Grunt	8
+36	230	764	1	Peach & Blueberry Grunt	8
+37	302	883	0	Spanish Tortilla	5
+38	989	883	0	Spanish Tortilla	5
+39	313	883	1	Spanish Tortilla	5
+41	956	654	1	Kafteji	4
+42	610	654	1	Kafteji	4
+43	835	256	0	Rocky Road Fudge	4
+44	726	37	1	Shakshuka	8
+45	733	37	0	Shakshuka	8
+46	82	37	0	Shakshuka	8
+47	468	156	0	Provençal Omelette Cake	8
+48	544	156	0	Provençal Omelette Cake	8
+49	472	933	0	Timbits	8
+50	871	933	0	Timbits	8
+51	974	870	1	Massaman Beef curry	5
+52	369	318	1	Croatian lamb peka	4
+53	907	318	0	Croatian lamb peka	4
+57	202	319	1	Peanut Butter Cookies	5
+58	366	319	1	Peanut Butter Cookies	5
+59	946	319	0	Peanut Butter Cookies	5
+60	688	438	0	Portuguese prego with green piri-piri	9
+61	166	628	1	Vegetable Shepherd’s Pie	5
+64	144	745	1	Beef and Oyster pie	5
+65	867	745	1	Beef and Oyster pie	5
+66	777	292	0	Provençal Omelette Cake	8
+67	267	292	0	Provençal Omelette Cake	8
+68	246	292	0	Provençal Omelette Cake	8
+69	268	899	1	Peach & Blueberry Grunt	8
+70	976	405	0	Smoked Haddock Kedgeree	6
+71	908	405	1	Smoked Haddock Kedgeree	6
+72	1002	405	1	Smoked Haddock Kedgeree	6
+73	340	446	1	Strawberry Rhubarb Pie	9
+74	865	446	0	Strawberry Rhubarb Pie	9
+75	869	343	1	Timbits	8
+76	289	343	0	Timbits	8
+77	609	343	0	Timbits	8
+78	304	343	1	Timbits	8
+79	53	974	0	Mustard champ	4
+80	960	974	0	Mustard champ	4
+81	537	974	0	Mustard champ	4
+82	530	862	0	Blackberry Fool	5
+83	696	862	0	Blackberry Fool	5
+84	46	862	1	Blackberry Fool	5
+85	710	876	1	Apple & Blackberry Crumble	11
+86	636	876	0	Apple & Blackberry Crumble	11
+87	678	876	1	Apple & Blackberry Crumble	11
+88	795	876	0	Apple & Blackberry Crumble	11
+89	374	876	0	Apple & Blackberry Crumble	11
+90	946	876	0	Apple & Blackberry Crumble	11
+91	755	355	1	Pear Tarte Tatin	6
+92	924	355	0	Pear Tarte Tatin	6
+93	796	500	0	Paszteciki (Polish Pasties)	7
+94	339	500	1	Paszteciki (Polish Pasties)	7
+95	378	887	0	Christmas cake	5
+96	998	887	0	Christmas cake	5
+97	189	258	0	Treacle Tart	9
+98	642	258	1	Treacle Tart	9
+99	212	258	1	Treacle Tart	9
+102	908	518	0	Dal fry	8
+103	218	518	1	Dal fry	8
+104	838	443	0	Lamb Biryani	4
+105	832	443	0	Lamb Biryani	4
+106	476	324	1	Saltfish and Ackee	4
+107	289	601	1	Eton Mess	5
+108	688	527	0	Treacle Tart	9
+109	211	527	0	Treacle Tart	9
+110	137	527	0	Treacle Tart	9
+112	391	708	1	Moussaka	5
+113	488	708	1	Moussaka	5
+114	766	391	0	Nanaimo Bars	9
+115	138	980	1	Bread and Butter Pudding	7
+116	34	980	0	Bread and Butter Pudding	7
+117	884	467	1	Creamy Tomato Soup	9
+118	904	467	1	Creamy Tomato Soup	9
+119	726	467	0	Creamy Tomato Soup	9
+120	582	467	0	Creamy Tomato Soup	9
+121	561	563	0	Beef Wellington	6
+122	816	724	1	Lasagna Sandwiches	8
+123	785	724	1	Lasagna Sandwiches	8
+124	170	724	1	Lasagna Sandwiches	8
+125	606	724	0	Lasagna Sandwiches	8
+126	655	724	1	Lasagna Sandwiches	8
+127	333	47	1	Tonkatsu pork	8
+128	441	47	1	Tonkatsu pork	8
+129	324	47	1	Tonkatsu pork	8
+130	618	47	0	Tonkatsu pork	8
+131	689	47	0	Tonkatsu pork	8
+132	67	47	0	Tonkatsu pork	8
+133	300	47	0	Tonkatsu pork	8
+134	172	906	0	Carrot Cake	6
+135	868	906	1	Carrot Cake	6
+137	175	219	0	Mbuzi Choma (Roasted Goat)	4
+138	553	919	0	Laksa King Prawn Noodles	5
+139	488	919	0	Laksa King Prawn Noodles	5
+140	677	919	0	Laksa King Prawn Noodles	5
+141	1001	919	0	Laksa King Prawn Noodles	5
+142	1002	919	1	Laksa King Prawn Noodles	5
+143	145	555	0	Mustard champ	4
+144	350	574	1	Eton Mess	5
+145	197	160	0	Tunisian Orange Cake	7
+146	898	160	0	Tunisian Orange Cake	7
+147	100	160	0	Tunisian Orange Cake	7
+149	927	593	1	Kumpir	7
+150	430	593	1	Kumpir	7
+151	408	593	1	Kumpir	7
+152	901	593	1	Kumpir	7
+153	457	593	1	Kumpir	7
+154	832	772	0	General Tso's Chicken	7
+155	768	772	0	General Tso's Chicken	7
+156	164	875	0	Lamb Tzatziki Burgers	4
+157	542	34	1	Tahini Lentils	5
+158	537	180	1	Honey Teriyaki Salmon	10
+159	347	180	1	Honey Teriyaki Salmon	10
+160	702	850	0	Dal fry	8
+163	736	656	0	Traditional Croatian Goulash	5
+164	498	50	0	Venetian Duck Ragu	5
+165	772	539	1	Pilchard puttanesca	8
+166	96	539	0	Pilchard puttanesca	8
+167	751	539	0	Pilchard puttanesca	8
+168	395	640	1	Chicken Quinoa Greek Salad	8
+169	769	410	0	Pork Cassoulet	5
+171	106	763	1	Beef Wellington	6
+172	261	763	0	Beef Wellington	6
+173	900	566	0	Potato Gratin with Chicken	6
+174	564	566	0	Potato Gratin with Chicken	6
+175	742	566	1	Potato Gratin with Chicken	6
+176	83	566	1	Potato Gratin with Chicken	6
+177	238	566	1	Potato Gratin with Chicken	6
+180	457	925	0	Salmon Eggs Eggs Benedict	11
+181	97	925	0	Salmon Eggs Eggs Benedict	11
+182	635	811	1	Portuguese custard tarts	4
+183	379	337	0	Jerk chicken with rice & peas	4
+184	957	337	0	Jerk chicken with rice & peas	4
+185	500	921	1	Shakshuka	8
+186	987	921	1	Shakshuka	8
+187	594	408	0	Tarte Tatin	7
+188	843	408	1	Tarte Tatin	7
+189	423	634	0	Spring onion and prawn empanadas	4
+190	109	634	1	Spring onion and prawn empanadas	4
+191	6	203	1	Ham hock colcannon	6
+192	40	203	1	Ham hock colcannon	6
+193	780	203	0	Ham hock colcannon	6
+195	4	134	1	Piri-piri chicken and slaw	6
+200	35	521	1	Tamiya	4
+201	430	521	0	Tamiya	4
+202	996	739	0	Nanaimo Bars	9
+204	150	901	1	General Tso's Chicken	7
+205	561	650	1	Tunisian Orange Cake	7
+206	572	496	1	Rosół (Polish Chicken Soup)	11
+207	45	496	0	Rosół (Polish Chicken Soup)	11
+208	73	553	0	Prawn & Fennel Bisque	7
+209	908	553	1	Prawn & Fennel Bisque	7
+210	760	553	0	Prawn & Fennel Bisque	7
+211	941	529	0	Beef Dumpling Stew	6
+215	122	381	1	Portuguese prego with green piri-piri	9
+216	442	381	1	Portuguese prego with green piri-piri	9
+219	420	858	1	Katsu Chicken curry	9
+220	171	858	1	Katsu Chicken curry	9
+221	280	858	0	Katsu Chicken curry	9
+222	794	167	1	Christmas cake	5
+223	598	674	1	French Omelette	4
+224	355	674	0	French Omelette	4
+225	836	674	0	French Omelette	4
+226	842	674	1	French Omelette	4
+227	467	326	1	Chicken Ham and Leek Pie	8
+228	314	326	0	Chicken Ham and Leek Pie	8
+229	583	301	0	Mince Pies	7
+230	489	301	0	Mince Pies	7
+231	340	301	0	Mince Pies	7
+232	903	301	1	Mince Pies	7
+233	757	470	0	Chicken Quinoa Greek Salad	8
+234	326	228	1	Venetian Duck Ragu	5
+235	377	228	1	Venetian Duck Ragu	5
+236	638	228	0	Venetian Duck Ragu	5
+241	124	681	0	Kentucky Fried Chicken	5
+242	497	681	0	Kentucky Fried Chicken	5
+243	861	900	0	Poutine	8
+244	510	900	0	Poutine	8
+245	763	900	1	Poutine	8
+246	808	900	0	Poutine	8
+247	848	900	1	Poutine	8
+251	100	670	0	Rosół (Polish Chicken Soup)	11
+252	625	670	1	Rosół (Polish Chicken Soup)	11
+253	505	749	1	Coq au vin	4
+254	980	749	1	Coq au vin	4
+255	930	749	0	Coq au vin	4
+257	808	143	0	Beef Sunday Roast	10
+258	510	143	0	Beef Sunday Roast	10
+259	569	898	1	Osso Buco alla Milanese	10
+260	684	898	0	Osso Buco alla Milanese	10
+261	214	898	1	Osso Buco alla Milanese	10
+262	169	2	1	Chicken Quinoa Greek Salad	8
+263	539	2	1	Chicken Quinoa Greek Salad	8
+264	952	839	1	Portuguese prego with green piri-piri	9
+265	308	839	1	Portuguese prego with green piri-piri	9
+266	349	927	0	Ham hock colcannon	6
+267	480	927	0	Ham hock colcannon	6
+269	347	466	1	Spanish Tortilla	5
+271	976	575	0	Fish fofos	5
+275	849	35	1	Beef Dumpling Stew	6
+276	246	35	0	Beef Dumpling Stew	6
+277	892	461	0	Pear Tarte Tatin	6
+283	454	255	0	Massaman Beef curry	5
+284	605	255	0	Massaman Beef curry	5
+285	441	968	1	Chicken Ham and Leek Pie	8
+286	72	968	0	Chicken Ham and Leek Pie	8
+287	163	968	1	Chicken Ham and Leek Pie	8
+288	181	968	0	Chicken Ham and Leek Pie	8
+291	191	802	1	Chicken Marengo	5
+292	578	802	0	Chicken Marengo	5
+293	137	126	1	Saltfish and Ackee	4
+294	144	126	0	Saltfish and Ackee	4
+295	863	770	0	Ful Medames	7
+296	942	53	1	Vegetarian Casserole	8
+297	233	53	1	Vegetarian Casserole	8
+298	764	133	0	Beef Sunday Roast	10
+299	53	133	0	Beef Sunday Roast	10
+300	768	13	1	Grilled Portuguese sardines	7
+301	283	13	0	Grilled Portuguese sardines	7
+302	171	13	1	Grilled Portuguese sardines	7
+303	147	13	1	Grilled Portuguese sardines	7
+305	676	744	0	Portuguese fish stew (Caldeirada de peixe)	6
+306	300	744	0	Portuguese fish stew (Caldeirada de peixe)	6
+309	422	124	0	Cashew Ghoriba Biscuits	5
+310	12	124	0	Cashew Ghoriba Biscuits	5
+311	699	58	1	Katsu Chicken curry	9
+312	325	498	1	Chicken Quinoa Greek Salad	8
+313	296	498	0	Chicken Quinoa Greek Salad	8
+317	421	737	1	Honey Teriyaki Salmon	10
+318	967	958	0	Corba	8
+319	19	958	1	Corba	8
+320	45	525	1	Prawn & Fennel Bisque	7
+321	180	881	0	Piri-piri chicken and slaw	6
+322	74	881	1	Piri-piri chicken and slaw	6
+323	368	881	0	Piri-piri chicken and slaw	6
+324	676	269	1	Bakewell tart	4
+325	795	269	0	Bakewell tart	4
+326	110	269	0	Bakewell tart	4
+327	927	809	1	Rogaliki (Polish Croissant Cookies)	8
+328	334	809	1	Rogaliki (Polish Croissant Cookies)	8
+329	237	809	1	Rogaliki (Polish Croissant Cookies)	8
+330	237	993	0	Honey Teriyaki Salmon	10
+332	745	259	1	Strawberry Rhubarb Pie	9
+333	405	259	1	Strawberry Rhubarb Pie	9
+334	235	579	1	Eton Mess	5
+335	566	52	0	Vegetable Shepherd’s Pie	5
+336	709	52	0	Vegetable Shepherd’s Pie	5
+337	78	302	1	Three Fish Pie	7
+339	495	159	1	Pizza Express Margherita	5
+345	53	867	0	Mulukhiyah	5
+346	630	867	1	Mulukhiyah	5
+349	185	260	0	Chicken Congee	7
+350	80	260	1	Chicken Congee	7
+351	863	260	0	Chicken Congee	7
+352	968	311	0	Salmon Prawn Risotto	9
+358	705	359	0	Carrot Cake	6
+359	554	359	1	Carrot Cake	6
+360	491	415	1	Thai Green Curry	4
+361	594	877	0	Chicken Congee	7
+362	789	877	0	Chicken Congee	7
+363	649	823	0	Koshari	10
+364	446	823	1	Koshari	10
+365	683	823	1	Koshari	10
+371	560	60	0	Vegetable Shepherd’s Pie	5
+372	905	831	1	Katsu Chicken curry	9
+373	471	831	1	Katsu Chicken curry	9
+377	757	625	0	Burek	4
+380	442	457	0	Apple Frangipan Tart	5
+381	616	457	0	Apple Frangipan Tart	5
+382	844	457	0	Apple Frangipan Tart	5
+383	762	442	1	Summer Pistou	8
+384	5	442	1	Summer Pistou	8
+385	167	442	0	Summer Pistou	8
+386	80	442	0	Summer Pistou	8
+388	31	659	1	Vegetarian Casserole	8
+389	516	659	0	Vegetarian Casserole	8
+390	534	659	1	Vegetarian Casserole	8
+391	336	659	1	Vegetarian Casserole	8
+396	420	528	1	Lamb and Potato pie	7
+397	192	528	1	Lamb and Potato pie	7
+398	996	582	0	Corba	8
+399	681	582	0	Corba	8
+400	20	848	0	Creamy Tomato Soup	9
+401	203	778	0	Beef Brisket Pot Roast	4
+402	204	778	0	Beef Brisket Pot Roast	4
+404	287	822	1	Eton Mess	5
+405	307	822	0	Eton Mess	5
+406	823	313	0	Mbuzi Choma (Roasted Goat)	4
+407	751	313	0	Mbuzi Choma (Roasted Goat)	4
+408	664	313	1	Mbuzi Choma (Roasted Goat)	4
+409	412	171	0	Osso Buco alla Milanese	10
+410	463	171	1	Osso Buco alla Milanese	10
+411	91	706	1	Cevapi Sausages	6
+415	866	837	1	Chicken Ham and Leek Pie	8
+416	803	40	1	Cashew Ghoriba Biscuits	5
+417	987	40	0	Cashew Ghoriba Biscuits	5
+420	428	616	1	Salmon Prawn Risotto	9
+421	920	616	1	Salmon Prawn Risotto	9
+422	170	616	1	Salmon Prawn Risotto	9
+426	602	327	1	Steak and Kidney Pie	6
+427	719	327	1	Steak and Kidney Pie	6
+428	351	327	0	Steak and Kidney Pie	6
+429	872	252	0	Salted Caramel Cheescake	4
+430	1000	28	0	Pork Cassoulet	5
+431	415	505	1	Chocolate Avocado Mousse	10
+433	157	151	0	Dal fry	8
+434	747	151	1	Dal fry	8
+441	418	468	1	Portuguese prego with green piri-piri	9
+442	748	5	1	Tourtiere	4
+443	58	5	0	Tourtiere	4
+444	376	5	1	Tourtiere	4
+446	720	667	1	Ful Medames	7
+447	188	667	1	Ful Medames	7
+450	167	215	1	Tamiya	4
+451	500	215	1	Tamiya	4
+452	295	939	1	Beef stroganoff	6
+453	690	448	1	Fettucine alfredo	6
+455	862	698	1	English Breakfast	9
+456	736	698	1	English Breakfast	9
+457	760	453	0	Croatian lamb peka	4
+458	371	453	1	Croatian lamb peka	4
+459	838	238	0	Apple & Blackberry Crumble	11
+460	22	233	1	Flamiche	8
+461	980	233	0	Flamiche	8
+462	372	233	0	Flamiche	8
+463	186	83	0	Carrot Cake	6
+465	870	138	1	Spanish Tortilla	5
+466	653	214	1	Strawberry Rhubarb Pie	9
+467	756	214	0	Strawberry Rhubarb Pie	9
+468	919	214	0	Strawberry Rhubarb Pie	9
+472	975	81	1	Burek	4
+474	522	55	0	Vegetable Shepherd’s Pie	5
+477	853	485	1	Kafteji	4
+479	597	703	1	Budino Di Ricotta	6
+482	102	465	1	French Onion Chicken with Roasted Carrots & Mashed Potatoes	4
+483	722	465	0	French Onion Chicken with Roasted Carrots & Mashed Potatoes	4
+484	854	388	0	Chicken Quinoa Greek Salad	8
+485	282	388	1	Chicken Quinoa Greek Salad	8
+486	874	957	1	Tahini Lentils	5
+487	390	957	0	Tahini Lentils	5
+489	687	414	1	Honey Teriyaki Salmon	10
+491	186	164	1	Rogaliki (Polish Croissant Cookies)	8
+492	864	164	0	Rogaliki (Polish Croissant Cookies)	8
+495	645	567	0	Pizza Express Margherita	5
+496	455	567	1	Pizza Express Margherita	5
+497	953	272	0	Salmon Eggs Eggs Benedict	11
+501	679	282	1	Rappie Pie	5
+504	878	163	1	Thai Green Curry	4
+505	377	163	1	Thai Green Curry	4
+506	284	106	0	Chicken Parmentier	4
+507	370	106	0	Chicken Parmentier	4
+508	328	187	1	Pilchard puttanesca	8
+509	402	187	0	Pilchard puttanesca	8
+510	510	187	0	Pilchard puttanesca	8
+517	990	562	1	Grilled Portuguese sardines	7
+518	539	562	0	Grilled Portuguese sardines	7
+519	950	244	1	Lamb Biryani	4
+520	66	191	1	Flamiche	8
+521	251	191	1	Flamiche	8
+523	605	892	1	English Breakfast	9
+524	7	892	1	English Breakfast	9
+525	241	892	0	English Breakfast	9
+526	868	174	1	Strawberry Rhubarb Pie	9
+527	916	174	1	Strawberry Rhubarb Pie	9
+528	52	235	0	Kung Po Prawns	5
+529	955	451	0	Koshari	10
+530	479	663	1	Salmon Prawn Risotto	9
+531	9	663	1	Salmon Prawn Risotto	9
+532	938	663	1	Salmon Prawn Risotto	9
+533	774	663	0	Salmon Prawn Risotto	9
+534	309	663	1	Salmon Prawn Risotto	9
+535	153	30	0	Kafteji	4
+536	641	869	1	Egg Drop Soup	4
+537	22	304	0	Corba	8
+538	369	304	0	Corba	8
+539	602	861	1	Cevapi Sausages	6
+541	880	48	0	Chicken Parmentier	4
+548	108	971	0	Tahini Lentils	5
+549	903	33	1	General Tso's Chicken	7
+550	965	351	0	Provençal Omelette Cake	8
+551	530	491	0	Pouding chomeur	5
+552	469	671	0	Fish Stew with Rouille	4
+553	49	671	1	Fish Stew with Rouille	4
+554	994	629	1	Beef and Oyster pie	5
+555	61	629	0	Beef and Oyster pie	5
+556	315	335	1	Salmon Eggs Eggs Benedict	11
+557	503	335	0	Salmon Eggs Eggs Benedict	11
+558	909	335	1	Salmon Eggs Eggs Benedict	11
+559	443	335	0	Salmon Eggs Eggs Benedict	11
+560	651	967	1	Piri-piri chicken and slaw	6
+561	768	595	0	Kapsalon	4
+562	746	98	0	English Breakfast	9
+563	809	98	1	English Breakfast	9
+564	322	98	0	English Breakfast	9
+565	6	428	0	Pizza Express Margherita	5
+566	505	784	0	Rogaliki (Polish Croissant Cookies)	8
+568	579	720	0	Kentucky Fried Chicken	5
+569	93	76	0	Christmas cake	5
+570	38	76	1	Christmas cake	5
+571	143	46	1	Osso Buco alla Milanese	10
+572	430	46	1	Osso Buco alla Milanese	10
+573	926	817	0	Paszteciki (Polish Pasties)	7
+574	59	817	0	Paszteciki (Polish Pasties)	7
+575	172	817	1	Paszteciki (Polish Pasties)	7
+577	896	503	1	Moussaka	5
+578	544	503	1	Moussaka	5
+580	882	383	1	Mulukhiyah	5
+581	945	383	1	Mulukhiyah	5
+582	18	383	1	Mulukhiyah	5
+586	789	110	0	Blackberry Fool	5
+587	510	110	0	Blackberry Fool	5
+588	592	672	1	Lamb Biryani	4
+589	296	860	1	Peach & Blueberry Grunt	8
+590	29	860	0	Peach & Blueberry Grunt	8
+592	506	771	1	BBQ Pork Sloppy Joes	4
+593	204	771	0	BBQ Pork Sloppy Joes	4
+595	654	69	1	Coq au vin	4
+596	735	611	1	Traditional Croatian Goulash	5
+597	738	435	1	Pad See Ew	4
+598	745	488	1	Tarte Tatin	7
+599	1000	621	1	Rosół (Polish Chicken Soup)	11
+600	422	621	0	Rosół (Polish Chicken Soup)	11
+601	5	621	0	Rosół (Polish Chicken Soup)	11
+604	372	245	0	Tarte Tatin	7
+605	145	245	1	Tarte Tatin	7
+606	647	245	1	Tarte Tatin	7
+607	459	245	0	Tarte Tatin	7
+608	465	321	0	Poutine	8
+609	87	328	0	Bread and Butter Pudding	7
+610	490	328	1	Bread and Butter Pudding	7
+611	822	412	0	Summer Pistou	8
+612	895	412	1	Summer Pistou	8
+613	799	412	0	Summer Pistou	8
+614	155	412	0	Summer Pistou	8
+615	17	279	1	Minced Beef Pie	4
+616	6	146	1	Venetian Duck Ragu	5
+617	450	682	0	Tahini Lentils	5
+618	620	775	0	Spring onion and prawn empanadas	4
+622	50	507	1	Creamy Tomato Soup	9
+623	101	507	1	Creamy Tomato Soup	9
+628	315	851	1	Pilchard puttanesca	8
+637	106	556	1	Three Fish Pie	7
+638	373	556	0	Three Fish Pie	7
+639	260	556	0	Three Fish Pie	7
+640	286	27	1	Shakshuka	8
+641	53	152	0	Chicken Couscous	4
+642	51	152	0	Chicken Couscous	4
+643	347	450	0	Salted Caramel Cheescake	4
+644	986	450	0	Salted Caramel Cheescake	4
+645	838	819	1	Fish Stew with Rouille	4
+646	956	596	0	Chicken Marengo	5
+647	857	455	1	Lasagna Sandwiches	8
+648	349	333	1	Koshari	10
+649	997	333	0	Koshari	10
+650	989	333	0	Koshari	10
+652	628	4	0	Pear Tarte Tatin	6
+653	235	4	1	Pear Tarte Tatin	6
+654	225	240	0	Lamb and Potato pie	7
+655	95	26	0	Peach & Blueberry Grunt	8
+656	845	26	1	Peach & Blueberry Grunt	8
+657	559	26	1	Peach & Blueberry Grunt	8
+659	440	891	1	Dal fry	8
+660	349	114	0	Beef Wellington	6
+664	546	602	0	Portuguese fish stew (Caldeirada de peixe)	6
+665	684	602	0	Portuguese fish stew (Caldeirada de peixe)	6
+666	889	643	1	Nanaimo Bars	9
+667	493	643	0	Nanaimo Bars	9
+668	356	312	0	Beef Sunday Roast	10
+669	797	312	1	Beef Sunday Roast	10
+670	23	312	1	Beef Sunday Roast	10
+671	402	284	0	Apple & Blackberry Crumble	11
+672	648	101	0	Chocolate Avocado Mousse	10
+673	548	101	1	Chocolate Avocado Mousse	10
+674	59	101	0	Chocolate Avocado Mousse	10
+675	621	389	1	Budino Di Ricotta	6
+676	538	389	1	Budino Di Ricotta	6
+677	170	666	1	Cevapi Sausages	6
+678	993	666	1	Cevapi Sausages	6
+679	495	175	0	Ful Medames	7
+680	812	175	1	Ful Medames	7
+681	561	144	1	Fettucine alfredo	6
+682	175	144	0	Fettucine alfredo	6
+683	545	907	0	Bread and Butter Pudding	7
+684	461	907	1	Bread and Butter Pudding	7
+685	633	907	0	Bread and Butter Pudding	7
+688	868	577	1	Cevapi Sausages	6
+689	629	782	1	Jerk chicken with rice & peas	4
+690	363	782	0	Jerk chicken with rice & peas	4
+692	859	846	0	Mediterranean Pasta Salad	4
+693	783	710	0	Three Fish Pie	7
+695	176	549	0	Chicken Ham and Leek Pie	8
+696	437	799	0	Poutine	8
+697	373	705	0	Cashew Ghoriba Biscuits	5
+698	30	230	0	Chocolate Avocado Mousse	10
+699	975	230	1	Chocolate Avocado Mousse	10
+700	1001	230	1	Chocolate Avocado Mousse	10
+701	1002	230	1	Chocolate Avocado Mousse	10
+702	330	119	0	Portuguese custard tarts	4
+703	721	759	0	Salmon Eggs Eggs Benedict	11
+704	595	905	1	Beef Wellington	6
+705	136	905	0	Beef Wellington	6
+706	253	429	1	Rosół (Polish Chicken Soup)	11
+709	271	404	0	Apple Frangipan Tart	5
+710	211	404	0	Apple Frangipan Tart	5
+711	11	382	0	Nasi lemak	4
+714	132	923	1	Koshari	10
+716	810	64	1	Beef Dumpling Stew	6
+718	402	497	0	Nanaimo Bars	9
+719	197	497	0	Nanaimo Bars	9
+720	764	497	0	Nanaimo Bars	9
+721	999	127	1	Koshari	10
+722	927	127	0	Koshari	10
+723	282	584	0	Rocky Road Fudge	4
+724	398	584	1	Rocky Road Fudge	4
+725	965	584	0	Rocky Road Fudge	4
+727	358	963	1	Chicken Marengo	5
+728	553	963	0	Chicken Marengo	5
+729	733	481	1	Minced Beef Pie	4
+730	865	353	0	Lancashire hotpot	5
+731	765	266	0	BBQ Pork Sloppy Joes	4
+734	221	345	0	Rappie Pie	5
+735	483	345	1	Rappie Pie	5
+736	126	735	1	Rosół (Polish Chicken Soup)	11
+737	452	735	0	Rosół (Polish Chicken Soup)	11
+738	891	945	1	Poutine	8
+739	61	750	0	Keleya Zaara	6
+740	850	750	1	Keleya Zaara	6
+741	481	261	0	English Breakfast	9
+742	43	840	0	Crispy Sausages and Greens	5
+743	296	840	1	Crispy Sausages and Greens	5
+744	532	840	1	Crispy Sausages and Greens	5
+745	937	591	0	Beef stroganoff	6
+746	54	303	0	Kung Po Prawns	5
+747	23	303	1	Kung Po Prawns	5
+748	961	620	1	Steak and Kidney Pie	6
+749	334	730	1	Chick-Fil-A Sandwich	4
+750	481	917	0	Massaman Beef curry	5
+751	787	513	1	Provençal Omelette Cake	8
+752	166	545	1	Honey Teriyaki Salmon	10
+753	363	803	1	Honey Teriyaki Salmon	10
+754	310	396	1	Keleya Zaara	6
+755	159	396	1	Keleya Zaara	6
+756	914	396	0	Keleya Zaara	6
+758	179	560	1	Pad See Ew	4
+759	949	441	0	Apple & Blackberry Crumble	11
+764	87	447	0	Portuguese prego with green piri-piri	9
+765	695	447	0	Portuguese prego with green piri-piri	9
+766	494	447	0	Portuguese prego with green piri-piri	9
+768	54	783	1	Matar Paneer	4
+770	436	852	0	Pouding chomeur	5
+771	25	852	0	Pouding chomeur	5
+772	752	141	0	Treacle Tart	9
+774	871	832	0	Matar Paneer	4
+775	367	832	1	Matar Paneer	4
+776	280	832	1	Matar Paneer	4
+777	295	592	0	Lasagna Sandwiches	8
+778	100	592	1	Lasagna Sandwiches	8
+779	294	253	1	Prawn & Fennel Bisque	7
+780	390	253	0	Prawn & Fennel Bisque	7
+782	292	116	0	Rappie Pie	5
+783	402	120	0	Lamb and Potato pie	7
+784	615	385	1	Salmon Eggs Eggs Benedict	11
+785	184	385	1	Salmon Eggs Eggs Benedict	11
+786	850	223	1	Vegetarian Casserole	8
+787	68	184	0	Pork Cassoulet	5
+788	796	184	0	Pork Cassoulet	5
+789	344	785	0	Pilchard puttanesca	8
+794	238	678	1	Moussaka	5
+795	85	935	0	Thai Green Curry	4
+796	216	815	1	Egg Drop Soup	4
+797	331	360	0	Kumpir	7
+802	762	989	0	Katsu Chicken curry	9
+805	281	254	1	Tunisian Orange Cake	7
+807	87	289	1	Treacle Tart	9
+809	348	130	1	Chicken Congee	7
+810	295	121	1	Flamiche	8
+813	679	148	1	Portuguese custard tarts	4
+814	441	148	0	Portuguese custard tarts	4
+816	338	752	1	Nasi lemak	4
+817	967	842	1	Keleya Zaara	6
+818	563	339	0	Three Fish Pie	7
+820	831	636	0	Corba	8
+824	570	71	1	Nasi lemak	4
+825	850	693	0	Three Fish Pie	7
+828	701	21	0	Rosół (Polish Chicken Soup)	11
+830	357	363	1	Creamy Tomato Soup	9
+831	3	952	1	Lamb Tzatziki Burgers	4
+832	251	952	1	Lamb Tzatziki Burgers	4
+839	862	122	0	Tunisian Orange Cake	7
+840	434	791	0	Salmon Eggs Eggs Benedict	11
+841	512	825	1	Lancashire hotpot	5
+842	88	825	0	Lancashire hotpot	5
+844	110	523	1	Cevapi Sausages	6
+845	335	186	1	Salted Caramel Cheescake	4
+846	688	561	1	Fish fofos	5
+847	504	561	0	Fish fofos	5
+855	422	490	1	Lamb Tzatziki Burgers	4
+856	866	207	0	Paszteciki (Polish Pasties)	7
+857	305	207	0	Paszteciki (Polish Pasties)	7
+858	131	166	1	Ma Po Tofu	4
+859	677	565	1	Massaman Beef curry	5
+860	907	341	1	Potato Gratin with Chicken	6
+861	8	65	0	BBQ Pork Sloppy Joes	4
+862	586	188	1	Fettucine alfredo	6
+864	580	221	1	Burek	4
+866	388	820	0	Kentucky Fried Chicken	5
+867	240	268	0	Nanaimo Bars	9
+868	959	268	1	Nanaimo Bars	9
+869	400	758	1	Grilled Portuguese sardines	7
+872	274	605	0	Chicken Congee	7
+873	824	300	0	Portuguese fish stew (Caldeirada de peixe)	6
+874	621	300	0	Portuguese fish stew (Caldeirada de peixe)	6
+875	29	136	0	Ma Po Tofu	4
+876	469	15	1	Provençal Omelette Cake	8
+878	819	377	1	Apple & Blackberry Crumble	11
+879	134	377	1	Apple & Blackberry Crumble	11
+880	240	88	0	Tourtiere	4
+883	600	818	1	Beef Sunday Roast	10
+884	597	818	1	Beef Sunday Roast	10
+885	728	241	0	Chick-Fil-A Sandwich	4
+886	246	827	0	Chicken Couscous	4
+887	699	827	0	Chicken Couscous	4
+888	910	598	1	Beef Sunday Roast	10
+889	183	190	0	Ful Medames	7
+890	133	535	0	Dal fry	8
+891	10	535	0	Dal fry	8
+892	694	384	0	Budino Di Ricotta	6
+893	963	294	1	Tunisian Orange Cake	7
+896	579	690	0	Crispy Sausages and Greens	5
+897	664	690	1	Crispy Sausages and Greens	5
+898	744	886	1	Spring onion and prawn empanadas	4
+899	51	169	0	Burek	4
+900	713	231	1	Katsu Chicken curry	9
+901	746	231	0	Katsu Chicken curry	9
+902	363	757	0	Lamb and Potato pie	7
+903	296	413	0	Honey Teriyaki Salmon	10
+904	500	194	0	Kung Po Prawns	5
+905	691	194	0	Kung Po Prawns	5
+906	219	844	1	Creamy Tomato Soup	9
+907	470	633	0	Beef stroganoff	6
+908	56	178	1	Corba	8
+909	499	714	1	Mediterranean Pasta Salad	4
+910	101	841	1	Peanut Butter Cookies	5
+913	173	358	1	Minced Beef Pie	4
+915	721	506	1	Kentucky Fried Chicken	5
+916	729	56	1	Peanut Butter Cookies	5
+917	875	986	1	Pad See Ew	4
+918	549	986	1	Pad See Ew	4
+919	358	499	0	Rappie Pie	5
+920	571	519	1	Minced Beef Pie	4
+921	274	889	1	Kapsalon	4
+924	24	599	0	Tonkatsu pork	8
+925	976	991	1	General Tso's Chicken	7
+926	1001	991	0	General Tso's Chicken	7
+927	1002	991	0	General Tso's Chicken	7
+929	646	199	0	Honey Teriyaki Salmon	10
+930	908	199	1	Honey Teriyaki Salmon	10
+932	444	890	1	Beef stroganoff	6
+934	154	546	0	Budino Di Ricotta	6
+936	400	419	1	Lamb and Potato pie	7
+937	395	329	0	Saltfish and Ackee	4
+938	696	86	1	Fettucine alfredo	6
+939	825	86	1	Fettucine alfredo	6
+940	134	508	0	Lancashire hotpot	5
+941	832	508	0	Lancashire hotpot	5
+942	860	961	1	Beef Brisket Pot Roast	4
+943	603	204	1	Mince Pies	7
+944	902	43	0	Mince Pies	7
+945	392	43	1	Mince Pies	7
+948	785	912	0	Bakewell tart	4
+950	705	298	0	Traditional Croatian Goulash	5
+951	628	298	0	Traditional Croatian Goulash	5
+953	867	725	0	Kapsalon	4
+954	687	725	1	Kapsalon	4
+955	871	550	1	Lamb and Potato pie	7
+956	517	206	1	Beef Dumpling Stew	6
+959	761	425	1	Pork Cassoulet	5
+960	852	617	0	Chick-Fil-A Sandwich	4
+961	363	747	1	Beef Dumpling Stew	6
+962	801	392	1	Budino Di Ricotta	6
+963	305	569	1	Beef Brisket Pot Roast	4
+966	630	251	1	Ma Po Tofu	4
+967	70	251	1	Ma Po Tofu	4
+968	876	936	1	Pizza Express Margherita	5
+969	42	84	1	Piri-piri chicken and slaw	6
+970	336	868	1	Prawn & Fennel Bisque	7
+973	793	834	1	Fish Stew with Rouille	4
+975	929	985	0	Chocolate Avocado Mousse	10
+978	138	911	0	Vegetarian Casserole	8
+980	841	769	1	Egg Drop Soup	4
+982	801	362	1	Nasi lemak	4
+984	942	70	0	Kumpir	7
+985	116	524	0	Fish fofos	5
+986	203	524	0	Fish fofos	5
+987	53	692	0	Beef and Oyster pie	5
+994	733	309	0	Ful Medames	7
+997	521	157	1	Traditional Croatian Goulash	5
+1000	825	866	1	Mediterranean Pasta Salad	4
+1001	597	559	0	Egg Drop Soup	4
+1004	188	78	0	Chocolate Avocado Mousse	10
+1007	686	154	1	Mediterranean Pasta Salad	4
+1008	1001	813	1	Pouding chomeur	5
+1009	1002	813	1	Pouding chomeur	5

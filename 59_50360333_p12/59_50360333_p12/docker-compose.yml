@@ -1,0 +1,84 @@
+version: "3"
+services:
+  sub1:
+    stdin_open: true
+    build: ./client_server_1
+    ports: 
+      - "3000:3000"
+    depends_on:
+      - socket-server
+    networks:
+      - mern-app
+    depends_on:
+      - socket-server
+    networks:
+      - mern-app
+  sub2:
+    stdin_open: true
+    build: ./client_server_2
+    ports: 
+      - "3001:3001"
+    depends_on:
+      - socket-server
+    networks:
+      - mern-app
+    depends_on:
+      - socket-server
+    networks:
+      - mern-app
+  api-server:
+    build: ./server
+    ports:
+      - "5000:5000"
+    networks:
+      - mern-app
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:3.6.19-xenial
+    ports:
+      - "27017:27017"
+    networks:
+      - mern-app
+    volumes:
+      - mongo-data:/data/db
+  socket-server:
+    build: ./socket_server
+    ports:
+      - "7000:7000"
+    networks:
+      - mern-app
+    depends_on:
+      - api-server
+  pub1:
+    build: ./pub1
+    ports:
+      - "7001:7001"
+    networks:
+      - mern-app
+    depends_on:
+      - socket-server
+  pub2:
+    build: ./pub2
+    ports:
+      - "7002:7002"
+    networks:
+      - mern-app
+    depends_on:
+      - socket-server
+  pub3:
+    build: ./pub3
+    ports:
+      - "7003:7003"
+    networks:
+      - mern-app
+    depends_on:
+      - socket-server
+
+
+networks:
+  mern-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local

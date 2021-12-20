@@ -1,0 +1,218 @@
+version: "3"
+services:
+  sub1:
+    stdin_open: true
+    build: ./sub1
+    ports: 
+      - "3000:3000"
+    expose:
+      - "3000"
+    depends_on:
+      - socket-server
+      - api-server
+    networks:
+      - mern-app
+  api-server:
+    build: ./server
+    ports:
+      - "5000:5000"
+    expose:
+      - "5000"
+    networks:
+      - mern-app
+    depends_on:
+      - mongo
+  socket-server:
+    build: ./consumer_server
+    ports:
+      - "7000:7000"
+    expose:
+      - "7000"
+      - "9092"
+      - "9093"
+      - "9094"
+      - "9095"
+    networks:
+      - mern-app
+    depends_on:
+      - pub1
+      - pub2
+      - pub3
+      - pub4
+  mongo:
+    image: mongo:3.6.19-xenial
+    ports:
+      - "27017:27017"
+    networks:
+      - mern-app
+    volumes:
+      - mongo-data:/data/db
+  pub1:
+    build: ./producer_1
+    ports:
+      - "7001:7001"
+    expose:
+      - "7001"
+      - "9092"
+      - "9093"
+      - "9094"
+      - "9095"
+    networks:
+      - mern-app
+    depends_on:
+      - topic_creator
+  pub2:
+    build: ./producer_2
+    ports:
+      - "7002:7002"
+    expose:
+      - "7002"
+      - "9092"
+      - "9093"
+      - "9094"
+      - "9095"
+    networks:
+      - mern-app
+    depends_on:
+      - topic_creator
+  pub3:
+    build: ./producer_3
+    ports:
+      - "7003:7003"
+    expose:
+      - "7003"
+      - "9092"
+      - "9093"
+      - "9094"
+      - "9095"
+    networks:
+      - mern-app
+    depends_on:
+      - topic_creator
+  pub4:
+    build: ./producer_4
+    ports:
+      - "7004:7004"
+    expose:
+      - "7004"
+      - "9092"
+      - "9093"
+      - "9094"
+      - "9095"
+    networks:
+      - mern-app
+    depends_on:
+      - topic_creator
+  topic_creator:
+    build: ./topic_creator
+    networks:
+      - mern-app
+    depends_on:
+      - kafka0
+      - kafka1
+      - kafka2
+      - kafka3
+      - zookeeper
+
+  zookeeper:
+    image: wurstmeister/zookeeper:latest
+    ports:
+      - "2181:2181"
+    expose:
+      - "2181"
+    networks:
+      - mern-app
+
+  kafka0:
+    image: "confluentinc/cp-enterprise-kafka:5.2.1"
+    ports:
+      - '9092:9092'
+      - '29094:29094'
+    expose:
+      - "9092"
+      - "29094"
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      HOSTNAME_COMMAND: "route -n | awk '/UG[ \t]/{print $$2}'"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+      KAFKA_DELETE_TOPIC_ENABLE: 'true'
+      KAFKA_LISTENERS: LISTENER_BOB://kafka0:29092,LISTENER_FRED://kafka0:9092,LISTENER_ALICE://kafka0:29094
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_BOB://kafka0:29092,LISTENER_FRED://kafka0:9092,LISTENER_ALICE://never-gonna-give-you-up:29094
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_BOB:PLAINTEXT,LISTENER_FRED:PLAINTEXT,LISTENER_ALICE:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_BOB
+    networks:
+      - mern-app
+  kafka1:
+    image: "confluentinc/cp-enterprise-kafka:5.2.1"
+    ports:
+      - '9093:9093'
+      - '29095:29095'
+    expose:
+      - "9093"
+      - "29095"
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      HOSTNAME_COMMAND: "route -n | awk '/UG[ \t]/{print $$2}'"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+      KAFKA_DELETE_TOPIC_ENABLE: 'true'
+      KAFKA_LISTENERS: LISTENER_BOB://kafka1:29093,LISTENER_FRED://kafka1:9093,LISTENER_ALICE://kafka1:29095
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_BOB://kafka1:29093,LISTENER_FRED://kafka1:9093,LISTENER_ALICE://never-gonna-give-you-up:29095
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_BOB:PLAINTEXT,LISTENER_FRED:PLAINTEXT,LISTENER_ALICE:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_BOB
+    networks:
+      - mern-app
+  kafka2:
+    image: "confluentinc/cp-enterprise-kafka:5.2.1"
+    ports:
+      - '9094:9094'
+      - '29096:29096'
+    depends_on:
+      - zookeeper
+    expose:
+      - "9094"
+      - "29096"
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      HOSTNAME_COMMAND: "route -n | awk '/UG[ \t]/{print $$2}'"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+      KAFKA_DELETE_TOPIC_ENABLE: 'true'
+      KAFKA_LISTENERS: LISTENER_BOB://kafka2:29094,LISTENER_FRED://kafka2:9094,LISTENER_ALICE://kafka2:29096
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_BOB://kafka2:29094,LISTENER_FRED://kafka2:9094,LISTENER_ALICE://never-gonna-give-you-up:29096
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_BOB:PLAINTEXT,LISTENER_FRED:PLAINTEXT,LISTENER_ALICE:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_BOB
+    networks:
+      - mern-app
+  kafka3:
+    image: "confluentinc/cp-enterprise-kafka:5.2.1"
+    ports:
+      - '9095:9095'
+      - '29097:29097'
+    depends_on:
+      - zookeeper
+    expose:
+      - "9095"
+      - "29097"
+    networks:
+      - mern-app  
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      HOSTNAME_COMMAND: "route -n | awk '/UG[ \t]/{print $$2}'"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+      KAFKA_DELETE_TOPIC_ENABLE: 'true'
+      KAFKA_LISTENERS: LISTENER_BOB://kafka3:29095,LISTENER_FRED://kafka3:9095,LISTENER_ALICE://kafka3:29097
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_BOB://kafka3:29095,LISTENER_FRED://kafka3:9095,LISTENER_ALICE://never-gonna-give-you-up:29097
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_BOB:PLAINTEXT,LISTENER_FRED:PLAINTEXT,LISTENER_ALICE:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_BOB
+  
+
+
+networks:
+  mern-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local

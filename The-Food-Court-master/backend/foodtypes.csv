@@ -1,0 +1,283 @@
+food_type_id,food_type
+3,Apam balik
+2,Apple & Blackberry Crumble
+1,Apple Frangipan Tart
+4,Ayam Percik
+8,Baingan Bharta
+27,Baked salmon with fennel & tomatoes
+5,Bakewell tart
+15,Banana Pancakes
+20,Battenberg Cake
+31,BBQ Pork Sloppy Joes
+14,Bean & Sausage Hotpot
+24,BeaverTails
+17,Beef and Mustard Pie
+18,Beef and Oyster pie
+32,"Beef Banh Mi Bowls with Sriracha Mayo, Carrot & Pickled Cucumber"
+21,Beef Bourguignon
+9,Beef Brisket Pot Roast
+16,Beef Dumpling Stew
+26,Beef Lo Mein
+36,Beef Rendang
+12,Beef stroganoff
+10,Beef Sunday Roast
+7,Beef Wellington
+33,Big Mac
+34,Bigos (Hunters Stew)
+30,Bitterballen (Dutch meatballs)
+19,Blackberry Fool
+23,Boulangère Potatoes
+35,Boxty Breakfast
+11,Braised Beef Chilli
+6,Bread and Butter Pudding
+29,Breakfast Potatoes
+22,Brie wrapped in prosciutto & brioche
+13,Broccoli & Stilton soup
+25,Brown Stew Chicken
+28,Budino Di Ricotta
+37,Burek
+45,Cajun spiced fish tacos
+67,Callaloo Jamaican Style
+65,Canadian Butter Tarts
+60,Carrot Cake
+71,Cashew Ghoriba Biscuits
+81,Cevapi Sausages
+70,Chakchouka
+61,Chelsea Buns
+79,Chick-Fil-A Sandwich
+52,Chicken & mushroom Hotpot
+43,Chicken Alfredo Primavera
+66,Chicken Basquaise
+68,Chicken Congee
+53,Chicken Couscous
+39,Chicken Enchilada Casserole
+44,Chicken Fajita Mac and Cheese
+58,Chicken Ham and Leek Pie
+42,Chicken Handi
+47,Chicken Karaage
+64,Chicken Marengo
+59,Chicken Parmentier
+78,Chicken Quinoa Greek Salad
+57,Chickpea Fajitas
+49,Chilli prawn linguine
+63,Chinon Apple Tarts
+84,Chivito uruguayo
+55,Choc Chip Pecan Pie
+54,Chocolate Avocado Mousse
+69,Chocolate Caramel Crispy
+38,Chocolate Gateau
+56,Chocolate Raspberry Brownies
+62,Chocolate Souffle
+75,Christmas cake
+41,Christmas Pudding Flapjack
+73,Christmas Pudding Trifle
+50,Clam chowder
+74,Classic Christmas pudding
+80,Coddled pork with cider
+48,Coq au vin
+72,Corba
+76,Corned Beef and Cabbage
+40,Cream Cheese Tart
+51,Creamy Tomato Soup
+77,Crispy Sausages and Greens
+83,Croatian Bean Stew
+82,Croatian lamb peka
+46,Crock Pot Chicken Baked Tacos
+85,Dal fry
+87,Duck Confit
+86,Dundee cake
+89,Eccles Cakes
+92,Egg Drop Soup
+93,Egyptian Fatteh
+90,English Breakfast
+91,Escovitch Fish
+88,Eton Mess
+102,Fennel Dauphinoise
+106,Feteer Meshaltet
+96,Fettucine alfredo
+107,Fish fofos
+94,Fish pie
+101,Fish Stew with Rouille
+99,Flamiche
+95,French Lentils With Garlic and Thyme
+100,French Omelette
+104,French Onion Chicken with Roasted Carrots & Mashed Potatoes
+98,French Onion Soup
+108,Fresh sardines
+103,Fruit and Cream Cheese Breakfast Pastries
+105,Ful Medames
+97,Full English Breakfast
+109,Garides Saganaki
+111,General Tso's Chicken
+112,Gigantes Plaki
+113,Gołąbki (cabbage roll)
+110,Grilled Mac and Cheese Sandwich
+114,Grilled Portuguese sardines
+121,Ham hock colcannon
+118,Home-made Mandazi
+119,Honey Balsamic Chicken with Crispy Broccoli & Potatoes
+115,Honey Teriyaki Salmon
+120,Honey Yogurt Cheesecake
+117,Hot and Sour Soup
+116,Hot Chocolate Fudge
+122,Irish stew
+123,Jam Roly-Poly
+125,Jamaican Beef Patties
+126,Japanese gohan rice
+127,Japanese Katsudon
+124,Jerk chicken with rice & peas
+136,Kafteji
+128,Kapsalon
+130,Katsu Chicken curry
+133,Kedgeree
+137,Keleya Zaara
+129,Kentucky Fried Chicken
+131,Key Lime Pie
+132,Kidney Bean Curry
+140,Koshari
+139,Krispy Kreme Donut
+138,Kumpir
+134,Kung Pao Chicken
+135,Kung Po Prawns
+144,Laksa King Prawn Noodles
+151,Lamb and Lemon Souvlaki
+147,Lamb and Potato pie
+142,Lamb Biryani
+143,Lamb Rogan josh
+145,Lamb Tagine
+141,Lamb tomato and sweet spices
+152,Lamb Tzatziki Burgers
+148,Lancashire hotpot
+150,Lasagna Sandwiches
+146,Lasagne
+149,Leblebi Soup
+161,Ma Po Tofu
+159,Madeira Cake
+154,Massaman Beef curry
+156,Matar Paneer
+162,Mbuzi Choma (Roasted Goat)
+158,McSinghs Scotch pie
+153,Mediterranean Pasta Salad
+168,Mee goreng mamak
+163,Mince Pies
+157,Minced Beef Pie
+160,Montreal Smoked Meat
+167,Moroccan Carrot Soup
+164,Moussaka
+165,Mulukhiyah
+155,Mushroom & Chestnut Rotolo
+169,Mushroom soup with buckwheat
+166,Mustard champ
+172,Nanaimo Bars
+173,Nasi lemak
+171,New York cheesecake
+170,Nutty Chicken Curry
+174,Osso Buco alla Milanese
+175,Oxtail with broad beans
+176,Pad See Ew
+181,Pancakes
+185,Parkin Cake
+193,Paszteciki (Polish Pasties)
+189,Pate Chinois
+184,Peach & Blueberry Grunt
+183,Peanut Butter Cheesecake
+191,Peanut Butter Cookies
+186,Pear Tarte Tatin
+194,Pierogi (Polish Dumplings)
+179,Pilchard puttanesca
+196,Piri-piri chicken and slaw
+192,Pizza Express Margherita
+195,Polskie Naleśniki (Polish Pancakes)
+180,Pork Cassoulet
+198,Portuguese barbecued pork (Febras assadas)
+200,Portuguese custard tarts
+199,Portuguese fish stew (Caldeirada de peixe)
+197,Portuguese prego with green piri-piri
+177,Potato Gratin with Chicken
+190,Pouding chomeur
+178,Poutine
+188,Prawn & Fennel Bisque
+187,Provençal Omelette Cake
+182,Pumpkin Pie
+208,Rappie Pie
+207,Ratatouille
+203,Recheado Masala Fish
+209,Red Peas Soup
+204,Ribollita
+201,Rigatoni with fennel sausage sauce
+210,Roast fennel and aubergine paella
+205,"Roasted Eggplant With Tahini, Pine Nuts, and Lentils"
+206,Rock Cakes
+202,Rocky Road Fudge
+212,Rogaliki (Polish Croissant Cookies)
+211,Rosół (Polish Chicken Soup)
+213,Roti john
+238,Salmon Avocado Salad
+239,Salmon Eggs Eggs Benedict
+220,Salmon Prawn Risotto
+221,Salted Caramel Cheescake
+234,Saltfish and Ackee
+222,Seafood fideuà
+252,Seri muka kuih
+240,Shakshuka
+250,Shawarma
+237,Shrimp Chow Fun
+246,Skillet Apple Pork Chops with Roasted Sweet Potatoes & Zucchini
+249,Sledz w Oleju (Polish Herrings)
+241,Smoked Haddock Kedgeree
+216,Smoky Lentil Chili with Squash
+243,Snert (Dutch Split Pea Soup)
+245,Soy-Glazed Meatloaves with Wasabi Mashed Potatoes & Roasted Carrots
+244,Spaghetti alla Carbonara
+214,Spaghetti Bolognese
+225,Spanish Tortilla
+215,Spicy Arrabiata Penne
+218,Spicy North African Potato Salad
+223,Spinach & Ricotta Cannelloni
+231,Split Pea Soup
+228,Spotted Dick
+251,Spring onion and prawn empanadas
+224,Squash linguine
+242,Stamppot
+226,Steak and Kidney Pie
+233,Steak Diane
+227,Sticky Toffee Pudding
+217,Sticky Toffee Pudding Ultimate
+219,"Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt"
+247,Strawberry Rhubarb Pie
+248,Stuffed Lamb Tomatoes
+232,Sugar Pie
+230,Summer Pistou
+229,Summer Pudding
+235,Sweet and Sour Pork
+236,Szechuan Beef
+259,Tahini Lentils
+269,Tamiya
+254,Tandoori chicken
+262,Tarte Tatin
+253,Teriyaki Chicken Casserole
+255,Thai Green Curry
+260,Three Fish Pie
+263,Three-cheese souffles
+265,Timbits
+256,Toad In The Hole
+270,Tonkatsu pork
+264,Tourtiere
+271,Traditional Croatian Goulash
+261,Treacle Tart
+268,Tuna and Egg Briks
+258,Tuna Nicoise
+267,Tunisian Lamb Soup
+266,Tunisian Orange Cake
+257,Turkey Meatloaf
+273,Vegan Chocolate Cake
+272,Vegan Lasagna
+278,Vegetable Shepherd’s Pie
+276,Vegetarian Casserole
+277,Vegetarian Chilli
+275,Venetian Duck Ragu
+274,Vietnamese Grilled Pork (bun-thit-nuong)
+281,Walnut Roll Gužvara
+279,White chocolate creme brulee
+280,Wontons
+282,Yaki Udon

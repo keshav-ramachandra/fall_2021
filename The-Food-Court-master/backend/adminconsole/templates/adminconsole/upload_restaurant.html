@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% load static %}
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title>Upload Restaurant
+	</title>
+	<!-- MDB icon -->
+	<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+	<!-- Google Fonts Roboto -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+	<!-- MDB CSS-->
+	<link rel="stylesheet" href="{% static 'adminconsole/css/mdb/mdb.min.css' %}" />
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="{% static 'adminconsole/css/mdb/mdb.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'adminconsole/css/food.css' %}">
+
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<!-- Container wrapper -->
+		<div class="container">
+            <a class="navbar-brand" href="/admin_home">
+                <img
+                  src="{% static 'adminconsole/media/food_court_logo.png' %}"
+                  height="50"
+                  alt=""
+                  loading="lazy"
+                />
+              </a>
+
+			<!-- Collapsible wrapper -->
+			<div class="collapse navbar-collapse" id="navbarButtonsExample">
+				<!-- Left links -->
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link" href="/approve_images">Manage Images</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/add_restaurant">Manage Restaurant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/add_food_type">Manage Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/super_admin_login">Manage Admins</a></li>
+				</ul>
+				<div class="d-flex align-items-center">
+                    <a href="/logout" class="btn btn-danger px-3 me-2">Logout</a>
+				</div>
+			</div>
+			<!-- Collapsible wrapper -->
+		</div>
+		<!-- Container wrapper -->
+	</nav>
+	<!-- Navbar -->
+	<div class="App">
+		{% if restaurants %}
+		<header class="App-header">
+			<img src="{% static 'adminconsole/media/food_court_logo.png' %}" class="App-logo" />
+			<h3>Add a new Restaurant</h3>
+		</header>
+		{% else %}
+		<header class="App-header">
+			<img src="{% static 'adminconsole/media/food_court_logo.png' %}" class="App-logo" />
+			<h3>Edit Restaurant</h3>
+		</header>
+		{% endif %}
+		<form name="add_restaurant" class="form-horizontal" method="POST" action="/add_restaurant">
+			{% csrf_token %}
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="restaurant_name">Restaurant Name*:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="restaurant_name" placeholder="Restaurant Name"
+						name="restaurant_name" value="{{ resto_new.name }}" required>
+				</div>
+			</div>
+			<br />
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="restaurant_url">Website URL:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="restaurant_url" oninput="validURL(document.add_restaurant.restaurant_url)" placeholder="Restaurant Website URL"
+						name="restaurant_url" value="{{ resto_new.website }}" >
+				</div>
+				<p class="col-sm-2"></p>
+				<p id="website_error" class="col-sm-10"></p>
+			</div>
+			<br />
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="restaurant_contact">Contact No.*:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="restaurant_contact" oninput="phonenumber(document.add_restaurant.restaurant_contact)" placeholder="Contact Details"
+						name="restaurant_contact" value="{{ resto_new.contact }}" >
+				</div>
+				<p class="col-sm-2"></p>
+				<p id="contact_info_error" class="col-sm-10"></p>
+			</div>
+			<br />
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="restaurant_address">Restaurant Address:*</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="restaurant_address" placeholder="Restaurant Address"
+						name="restaurant_address" value="{{ resto_new.address }}" required>
+				</div>
+			</div>
+			<br />
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="restaurant_status">Business Status:*</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="restaurant_status" placeholder="Restaurant Status"
+						name="restaurant_status" value="{{ resto_new.business_status }}" required>
+				</div>
+			</div>
+			<br />
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="restaurant_hours">Operating Hours:*</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="restaurant_hours" placeholder="Restaurant Hours"
+						name="restaurant_hours" value="{{ resto_new.operating_hours }}" required>
+				</div>
+			</div>
+			<br />
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="restaurant_latitude">Latitude:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="restaurant_latitude" placeholder="0.0"
+						name="restaurant_latitude" value="{{ resto_new.latitude }}" >
+				</div>
+			</div>
+			<br/>
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="restaurant_longitude">Longitude:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="restaurant_longitude" placeholder="0.0"
+						name="restaurant_longitude" value="{{ resto_new.longitude }}" >
+				</div>
+			</div>
+			<br />
+			{% if messages %}
+        		<ul class="messages">
+            		{% for message in messages %}
+            			<li {% if message.tags %} class="{{ message.tags }}"{% endif %} style="list-style: none;">{{ message }}</li>
+            		{% endfor %}
+        		</ul>
+        	{% endif %}
+			<div class="form-group">
+				<div class="col-sm">
+					{% if restaurants %}
+					<button type="submit" class="btn btn-success">Add</button>
+					{% else %}
+					<button type="submit" class="btn btn-success">Save</button>
+					{% endif %}
+				</div>
+			</div>
+		</form>
+		<br />
+		{% if restaurants %}
+		<h3>Existing restaurants</h3>
+		<div class="row g-0">
+			{% for r in restaurants %}
+			<div class="col-md-12 row mb-3">
+				<div class="col-md-8 d-flex justify-content-start">{{ r.name }}</div>
+				<div class="col-md-8 d-flex justify-content-start">{{ r.address }}</div>
+				<div class="col-md-2 d-flex justify-content-end">
+					<form action='/edit_restaurant_details' method='GET'>
+					<input type="hidden" name="restaurant_id" value="{{ r.restaurant_id }}"></input>
+					<button type='submit' class="btn btn-info">Edit Restaurant</button> 
+					</form>
+				</div>
+				<div class="col-md-2 d-flex justify-content-end">
+					<form action='/remove_restaurant' method='GET'>
+					<input type="hidden" name="restaurant_id" value="{{ r.restaurant_id }}"></input>
+					<button type='submit' class="btn btn-danger">Remove</button> 
+					</form>
+				</div>
+			</div>
+			<hr />
+			{% endfor %}
+		</table>
+	</div>
+	{% endif %}
+	<!-- MDB JavaScript -->
+<script type="text/javascript" src="{% static 'adminconsole/static/adminconsole/js/mdb.min.js' %}"></script>
+<!-- Custom scripts -->
+<script type="text/javascript">
+	function phonenumber(inputtxt)
+	{
+		var expression = /^[0-9]{3}[0-9]{3}[0-9]{4,6}$/im;
+		var regex = new RegExp(expression);
+		if(inputtxt.value.match(regex)){
+			document.getElementById('contact_info_error').innerHTML = "";
+			return true;
+		}
+		else{
+			document.getElementById('contact_info_error').innerHTML = "Invalid Contact Number";
+			return false;
+		}
+
+	}
+	function validURL(inputtxt) 
+	{	
+		var expression = "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)";
+		var regex = new RegExp(expression);
+		if(inputtxt.value.match(regex)){
+			document.getElementById('website_error').innerHTML = "";
+			return true;
+		}
+		else{
+			document.getElementById('website_error').innerHTML = "Invalid Website URL";
+			return false;
+		}
+	}
+
+	
+	let autocomplete
+	function initAutocomplete() {
+		var restaurantInput = document.getElementById('restaurant_name')
+		autocomplete = new google.maps.places.Autocomplete(
+			restaurantInput, {
+				types: ['establishment'],
+				componentRestrictions: {'country': ['US']},
+				fields: ['place_id', 'geometry', 'name', 'formatted_address', 'formatted_phone_number', 'website', 'business_status', 'opening_hours']
+			}
+		)
+
+		autocomplete.addListener('place_changed', onPlaceChanged)
+	}
+
+	function onPlaceChanged() {
+		const d = new Date()
+		var place = autocomplete.getPlace()
+		if (!place.geometry) {
+			document.getElementById('restaurant_name').placeholder = 'Enter a place';
+		} else {
+			console.log(place)
+			console.log(place.name)
+			// console.log(place.geometry.location)
+			console.log(place.geometry['location'].lat())
+			console.log(place.geometry['location'].lng())
+			document.getElementById('restaurant_longitude').value = place.geometry['location'].lng()
+			document.getElementById('restaurant_latitude').value = place.geometry['location'].lat()
+			
+			if(place.name) {
+				document.getElementById('restaurant_name').value = place.name
+			}
+			if (place.formatted_address) {
+				document.getElementById('restaurant_address').value = place.formatted_address
+			}
+			if (place.formatted_phone_number) {
+				var sanitizedContact = place.formatted_phone_number.replaceAll(/\(|\)|-|\s/g, "")
+				console.log(sanitizedContact)
+				document.getElementById('restaurant_contact').value = sanitizedContact
+			}
+			if (place.website) {
+				document.getElementById('restaurant_url').value = place.website
+			}
+			if (place.opening_hours) {
+				document.getElementById('restaurant_status').value = place.business_status
+			}
+			if (place.opening_hours) {
+				const openingHours = place.opening_hours.weekday_text
+				console.log(openingHours[d.getDay()].slice(openingHours[d.getDay()].indexOf(':') + 2).trim())
+				document.getElementById('restaurant_hours').value = place.opening_hours.weekday_text
+			}			
+		}
+	}
+
+</script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2S2pWXuqrxEGzErUx6ece4oXpioQRrRA&libraries=places&callback=initAutocomplete">
+</script>
+</body>
+
+
+
+</html>

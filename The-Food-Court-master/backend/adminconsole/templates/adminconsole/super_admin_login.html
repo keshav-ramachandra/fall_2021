@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% load static %}
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'adminconsole/css/mdb/mdb.min.css' %}">
+	<link rel="stylesheet" href="{% static 'adminconsole/css/mdb/mdb.rtl.min.css' %}">
+	<link rel="stylesheet" href="{% static 'adminconsole/css/index.css' %}">
+	<title>Admin Login Page</title>
+</head>
+
+<body>
+	<div class="App">
+		<header class="App-Header">
+			<img src="{% static 'adminconsole/media/food_court_logo.png' %}" class="App-logo" />
+			<h3>Super Admin Login</h3>
+		</header>
+		{% if messages %}
+		<ul class='messages'>
+			{% for msg in messages %}
+			<li style="list-style:none">{{ msg }}</li>
+			{% endfor %}
+			</ul>
+		{% endif %}
+		<form class="form-horizontal" method="POST" action="/super_admin_login">
+			{% csrf_token %}
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="email">Email*:</label>
+
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email" value="{{ login_details.user_email }}" required/>
+				</div>
+				
+			</div>
+			<br />
+			<div class="form-group row">
+				<label class="control-label col-sm-2" for="pwd">Password*:</label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+				</div>
+			</div>
+			<br />
+			<br />
+			<div class="form-group">
+				<div class="col-sm">
+					<button type="submit" class="btn btn-success">Submit</button>
+				</div>
+			</div>
+		</form>
+		<br />
+		<!-- <footer>
+			<a href="/admin_register">Are you a SuperAdmin</a>
+		</footer> -->
+	</div>
+</body>
+<script type="text/javascript" src="% static 'adminconsole/static/adminconsole/js/mdb.min.js' %"></script>
+</html>

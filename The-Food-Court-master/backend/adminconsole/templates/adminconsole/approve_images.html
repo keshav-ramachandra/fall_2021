@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB CSS-->
+    <link rel="stylesheet" href="{% static 'adminconsole/css/mdb/mdb.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'adminconsole/css/approve.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Import jquery cdn -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity= "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src= "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+    <!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<!-- Container wrapper -->
+		<div class="container">
+            <a class="navbar-brand" href="/admin_home">
+                <img
+                  src="{% static 'adminconsole/media/food_court_logo.png' %}"
+                  height="50"
+                  alt=""
+                  loading="lazy"
+                />
+              </a>
+
+			<!-- Collapsible wrapper -->
+			<div class="collapse navbar-collapse" id="navbarButtonsExample">
+				<!-- Left links -->
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active" href="/approve_images">Manage Images</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/add_restaurant">Manage Restaurant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/add_food_type">Manage Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/super_admin_login">Manage Admins</a></li>
+				</ul>
+				<div class="d-flex align-items-center">
+                    <a href="/logout" class="btn btn-danger px-3 me-2">Logout</a>
+				</div>
+			</div>
+			<!-- Collapsible wrapper -->
+		</div>
+		<!-- Container wrapper -->
+	</nav>
+    <div class="App">
+        <header class="App-Header">
+            <img src="{% static 'adminconsole/media/food_court_logo.png' %}" class="App-logo" />
+        </header>
+        <h3>There are images for you to approve</h3>
+    </div>
+    {% if messages %}
+        <ul class="messages">
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %} style="list-style: none;">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    
+        <div class="Approval-queue">
+            {% for t in current_posts %}
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="/media/{{ t.image }}"  alt="Image here" class="img-fluid img-thumbnail Approval-imgs" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Tags</h5>
+                            <p class="card-text">
+                                {{ t.tags }}
+                            </p>
+                            <h5 class="card-title">Restaurant</h5>
+                            <p class="card-text">
+                                {{ t.restoname }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row g-0">
+                            <div class="col-md-4" style="margin-top: 20px;">
+                                <form action='/approve_post' method='GET'>
+                                    <input type="hidden" name="post_id" value="{{ t.post_id }}"></input>
+                                    <button type='submit' class="btn btn-success">Approve</button> 
+                                </form>
+                            </div>
+                            <div class="col-md-8" style="margin-top: 20px;">
+                                <form>
+                                    <input type="hidden" name="post_id" value="{{ t.post_id }}"></input>
+                                    <button type='button' id="discard_{{ t.post_id }}" class="discard-btn btn btn-danger">Discard</button> 
+                                </form>
+                            </div>
+                        </div>
+                        <div id="hidden_{{ t.post_id }}" class="hidden-section row g-0" style="margin-top: 20px; padding: 0 20px;">
+                            <form action='/discard_post' method='GET'>
+                                <div class="col-sm">
+                                    <input type="hidden" name="post_id" value="{{ t.post_id }}"></input>
+                                    <input type="text" class="form-control" id="discard_reason" placeholder="Enter Reason" name="discard_reason"/>
+                                </div>
+                                <!-- <div class="col-sm" style="background-color: red; margin-top: 10px;">Something</div> -->
+                                <button type="submit" class="btn btn-danger col-sm" style="margin: 10px 30%; max-width: 100px;">Send</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".hidden-section").hide()
+                $(".discard-btn").click(function(){
+                    var post_id = $(this).attr('id');
+                    console.log(post_id)
+                    post_id = post_id.replace('discard_', '');
+                    console.log(post_id)
+                    hidden_id = '#hidden_' + post_id;
+                    console.log(hidden_id)
+                    $(hidden_id).toggle();
+                });
+            });
+        </script>
+</body>
+
+<!-- MDB JavaScript -->
+<script type="text/javascript" src="{% static 'adminconsole/js/mdb.min.js' %}"></script>
+
+</html>

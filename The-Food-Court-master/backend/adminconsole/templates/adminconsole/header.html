@@ -1,0 +1,23 @@
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+<!-- Google Fonts Roboto -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <link rel="stylesheet" href="{% static 'adminconsole/css/mdb/mdb.min.css' %}">
+  <link rel="stylesheet" href="{% static 'adminconsole/css/admin.css' %}">
+</head>
+
+<body>
+    {% include "adminconsole/includes/navbar.html "%}
+    <br>
+      <div class="container">
+        {% block content %}
+        {% endblock %}
+      </div>
+</body>
+  
+<!-- <script src="{% static 'tinymce/js/prism.js' %}"></script> -->

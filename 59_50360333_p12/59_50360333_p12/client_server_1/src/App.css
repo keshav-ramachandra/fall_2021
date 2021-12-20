@@ -1,0 +1,204 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.event-container {
+   background-color: #494949;
+   color: white;
+   max-height: 100px !important;
+   margin-bottom: 1px !important;
+}
+
+.event-header-container {
+   background-color: #494949;
+   color: white;
+   margn-top :13px;
+   font-weight: bold;
+   margin-bottom: 1px !importan;
+   border-top-left-radius: 11px;
+   border-top-right-radius:11px;
+}
+
+.teams-field{
+  padding-left: 100px !important;
+}
+
+.odds1, .odds2 {
+   color: #FFDF3A !important;
+}
+
+a.btn btn-large waves-effect waves-light hoverable blue accent-3{
+   padding-top: 17px !important;
+}
+
+a.btn btn-large btn-flat waves-effect white black-text{
+  background-color: #2D6E51 ;
+  color: white;
+}
+
+
+.closeIcon{
+  margin-left : 5px !important;
+}
+
+.subscribe-field{
+  margin-top: 2px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+
+   h3 {
+    font-size: 2.92rem;
+    line-height: 110%;
+    margin: 1.9466666667rem 0 1.168rem 0;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.closeIcon {
+    height: 13px;
+    width: 13px;
+    float: right;
+    margin-left: 5px;
+    cursor: pointer;
+    height: 18px !important;
+    color: #FFE53B;
+}
+
+.optionContainer:hover{
+  background-color: #2d6e51;;
+}
+
+.blue.accent-3 {
+    background-color: #2D6E51 !important;
+    margin-right: 30px;
+    color: white;
+    margin-bottom: 20px;
+    paddng-top: 17px !important;
+}
+
+
+.multiSelectContainer {
+    margin-left: 50px;
+    position: relative;
+    text-align: left;
+    width: 384px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+
+.searchWrapper {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    min-height: 22px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.highlightOption {
+    background: #2d6e51;
+    color: #fff;
+}
+
+.multiSelectContainer {
+    margin-left: 50px;
+    position: relative;
+    text-align: left;
+    width: 384px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.chip {
+    padding: 2px 10px;
+    background: #2D6E51;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 11px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 19px;
+    color: white;
+}
+
+.container valign-wrapper{
+   background-image: url("./bg1.jpg") no-repeat center center;
+}
+
+
